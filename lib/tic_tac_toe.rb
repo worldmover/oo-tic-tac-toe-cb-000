@@ -116,11 +116,9 @@ def play
     puts "Congratulations #{winner}!"
   end
 
-  if draw?==true
+  if draw? == true
     puts "Cat's Game!"
   end
 end
 
 end
-
-
