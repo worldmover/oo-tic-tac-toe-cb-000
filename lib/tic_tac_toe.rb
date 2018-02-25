@@ -18,10 +18,8 @@ class TicTacToe
      @input=input
    end
 
-   def move(board,index)
-     @board=board
-     @index=index
-     @board[@index] = "X"
+   def move(index,token="X")
+     @board[index] = "token"
    end
 
 end
