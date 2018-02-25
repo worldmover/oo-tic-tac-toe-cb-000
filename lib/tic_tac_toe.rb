@@ -22,10 +22,8 @@ class TicTacToe
      @board[index] = token
    end
 
-   def position_taken?(board,index)
-@board=board
-@index=index
-   if @board[@index]!=" "
+   def position_taken?(index)
+   if @board[index]!=" "
      return true
    end
    return false
