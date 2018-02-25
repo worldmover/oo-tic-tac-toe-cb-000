@@ -100,7 +100,7 @@ def over?
   return false
 end
 
-def winner(board)
+def winner
   if won?!=false
     return @board[won?[0]]
   end
