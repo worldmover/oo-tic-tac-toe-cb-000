@@ -100,4 +100,11 @@ def over?
   return false
 end
 
+def winner(board)
+  if won?!=false
+    return @board[won?[0]]
+  end
+  return nil
+end
+
 end
