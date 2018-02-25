@@ -79,4 +79,11 @@ def won?
   return false
 end
 
+def full?
+  if @board.none?{|el| el==" "} == true
+    return true
+  end
+  return false
+end
+
 end
