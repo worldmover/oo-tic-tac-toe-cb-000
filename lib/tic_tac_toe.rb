@@ -36,4 +36,35 @@ class TicTacToe
   return false
 end
 
+def turn_count
+  c=0
+  @board.each{|place|
+if place=="X" || place=="O"
+  c+=1
+end
+  }
+  return c
+end
+
+def current_player
+  if turn_count%2==0
+      return "X"
+  end
+  if turn_count%2==1
+    return "O"
+  end
+end
+
+def turn
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(index)
+    move(index, current_player(board))
+    display_board
+  else
+    turn
+  end
+end
+
 end
