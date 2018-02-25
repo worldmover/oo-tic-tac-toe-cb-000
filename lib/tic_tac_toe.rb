@@ -107,4 +107,9 @@ def winner
   return nil
 end
 
+def play
+  while over?!=true
+    turn
+  end
+
 end
