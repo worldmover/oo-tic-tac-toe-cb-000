@@ -93,4 +93,11 @@ def draw?
   return false
 end
 
+def over?
+  if won? || full? || draw?
+    return true
+  end
+  return false
+end
+
 end
