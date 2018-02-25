@@ -111,13 +111,16 @@ def play
   while over?!=true
     turn
   end
+
   if won?!=false
     puts "Congratulations #{winner}!"
   end
+
   if draw?==true
     puts "Cat's Game!"
   end
 end
 
-
 end
+
+
