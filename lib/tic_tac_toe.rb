@@ -111,5 +111,7 @@ def play
   while over?!=true
     turn
   end
+end
+
 
 end
