@@ -29,4 +29,11 @@ class TicTacToe
    return false
    end
 
+   def valid_move?(index)
+  if @board[index]==" " && index>=0 && index <=8
+    return true
+  end
+  return false
+end
+
 end
